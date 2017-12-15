@@ -1,0 +1,26 @@
+#Server Settings
+server:
+    port: 80
+    address: localhost
+
+# SPRING PROFILES
+spring:
+    # HTTP ENCODING
+    http:
+        encoding.charset: UTF-8
+        encoding.enable: true
+        encoding.force: true
+    mvc:
+        view.prefix: /WEB-INF/html/
+        view.suffix: .html
+
+    # DATASOURCE
+    datasource:
+        driverClass: com.mysql.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/yljx?useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: a+b=C.321!@#$
+
+mybatis:
+  typeAliasesPackage: com.yljx.entity
+  mapperLocations: classpath:mapper/*.xml
